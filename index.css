@@ -1,0 +1,72 @@
+*,*::after,*::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin:0;
+  background:yellowgreen;
+  overflow:hidden;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.outer-container{
+  display: grid;
+  place-items: center;
+  width:60vw;
+  height: 100vh;
+  background-color: #383838;
+  overflow: scroll;
+  
+box-shadow: 1px 1px 7px #000;
+}
+.container{
+/* height: 80rem; */
+
+
+display: grid;
+place-items: center;
+padding: 2rem;
+gap: 1rem;
+}
+.pce-logo{
+  height: 7rem;
+  width: 7rem;
+}
+.sdc-car{
+  max-height: 28rem;
+  max-width: 25rem;
+}
+.container>h1{
+  color: yellowgreen;
+font-size: 2rem;
+text-align: center;
+}
+.container>p{
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: justify;
+  
+}
+.container>a>button{
+  padding: 0.7rem 1.3rem 0.7rem 1.3rem;
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  background-color: yellowgreen;
+  border-radius: 0.4rem;
+  color: #fff;
+  cursor: pointer;
+  text-shadow: 1px 1px 1px #333;
+}
+@media screen and (max-width:1200px) {
+  .outer-container{
+    width: 70vw;
+  }
+}
+@media screen and (max-width:800px) {
+  .outer-container{
+    width: 80vw;
+  }
+}
