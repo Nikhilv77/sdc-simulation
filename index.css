@@ -11,6 +11,9 @@ body{
   justify-content:center;
   align-items:center;
 }
+::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
 .outer-container{
   display: grid;
   place-items: center;
